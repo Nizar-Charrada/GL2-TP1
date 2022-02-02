@@ -1,0 +1,95 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  height: 10%;
+  width: 100%;
+  padding: 25px;
+  background-image: url("./img/top_bg.png");
+  background-repeat: repeat-x;
+}
+
+footer {
+  margin-top: 30px;
+  height: 25%;
+  width: 100%;
+  padding: 50px;
+  background-image: url("./img/foot_bg.png");
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#logo {
+  position: absolute;
+  margin-bottom: 950px;
+  margin-right: 800px;
+}
+
+h2 {
+  color: brown;
+}
+
+a {
+  color: brown;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+  width: 960px;
+  display: grid;
+  grid-gap: 10px;
+  row-gap: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+}
+
+.para {
+  width: 100%;
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+section div {
+  margin: 0 11px;
+  width: min-content;
+}
+
+ul {
+  display: table;
+  width: 947px;
+  font: 1.1em sans-serif;
+  border-radius: 10px;
+}
+ul li {
+  display: table-cell;
+  background: brown;
+}
+
+ul li a {
+  color: white;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  padding: 20px 15px 21px 5px;
+}
+
+#img6 {
+  margin-left: 0px;
+}
+
+ul li a:active,
+.active {
+  background: black;
+  color: white;
+  background-image: url("./img/rings.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
